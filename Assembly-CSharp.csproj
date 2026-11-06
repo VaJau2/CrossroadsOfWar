@@ -141,6 +141,8 @@
      <Compile Include="Assets\Scripts\Building\WarehouseBuild.cs" />
      <Compile Include="Assets\Scripts\Building\WeaponBuilding.cs" />
      <Compile Include="Assets\Scripts\Building\WorkingManager.cs" />
+     <Compile Include="Assets\Scripts\Interface\LanguageSettingButton.cs" />
+     <Compile Include="Assets\Scripts\Interface\TranslationText.cs" />
      <Compile Include="Assets\Scripts\Player\ArrowTest.cs" />
      <Compile Include="Assets\Scripts\Player\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Player\CopyColor.cs" />
@@ -152,8 +154,11 @@
      <Compile Include="Assets\Scripts\Player\RandomColor.cs" />
      <Compile Include="Assets\Scripts\Player\RandomSex.cs" />
      <Compile Include="Assets\Scripts\SystemScripts\ChoosePonyMenu.cs" />
+     <Compile Include="Assets\Scripts\SystemScripts\FlatJsonParser.cs" />
      <Compile Include="Assets\Scripts\SystemScripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\SystemScripts\Ini.cs" />
+     <Compile Include="Assets\Scripts\SystemScripts\Lang.cs" />
+     <Compile Include="Assets\Scripts\SystemScripts\LanguageSetting.cs" />
      <Compile Include="Assets\Scripts\SystemScripts\loading.cs" />
      <Compile Include="Assets\Scripts\SystemScripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\SystemScripts\PoolManager.cs" />
