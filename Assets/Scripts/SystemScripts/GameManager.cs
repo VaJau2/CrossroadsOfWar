@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
     [Header("Help")]
     [SerializeField]
     string[] helpText;
+    // Коды перевода helpText (по тем же индексам)
+    [SerializeField]
+    string[] helpTextCodes;
     [SerializeField]
     int tempTextNumber;
     [SerializeField]
@@ -288,7 +291,7 @@ public class GameManager : MonoBehaviour
 
         if(HelpMenu.activeSelf)
         {
-            helpLabel.text = helpText[tempTextNumber];
+            helpLabel.text = Lang.GetInstance().GetTextOr(helpTextCodes, tempTextNumber, helpText[tempTextNumber]);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))

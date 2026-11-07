@@ -16,6 +16,10 @@ public class Building : MonoBehaviour
     public string BuildText;
     public string UpdateTwoText;
     public string UpdateThreeText;
+    // Коды перевода подсказок выше; если код пуст, показывается сам текст
+    public string BuildTextCode;
+    public string UpdateTwoTextCode;
+    public string UpdateThreeTextCode;
     public Text HintText;
     public int buildingLevel;
     public bool startBuilding;
@@ -111,6 +115,32 @@ public class Building : MonoBehaviour
         }
     }
 
+    // Подсказка, почему сейчас нельзя строить
+    private string GetCantBuildHint()
+    {
+        if (weather.weatherNumber >= 8)
+        {
+            return Lang.GetInstance().GetText("cant_build_rain");
+        }
+
+        if (!weather.timeCount.isDay)
+        {
+            return Lang.GetInstance().GetText("cant_build_night");
+        }
+
+        return Lang.GetInstance().GetText("not_enough_wood");
+    }
+
+    // Подсказка постройки/улучшения с ценой в древесине
+    private string GetBuildHint(string text, string code, int wood)
+    {
+        var hint = Lang.GetInstance().GetTextOr(code, text);
+
+        return wood > 0
+            ? string.Format(Lang.GetInstance().GetText("build_cost"), hint, wood)
+            : hint;
+    }
+
     public void CheckBuild()
     {
         MovingController controller = Player.GetComponent<MovingController>();
@@ -119,19 +149,12 @@ public class Building : MonoBehaviour
         {
             if (timerWood > 0)
             {
-                if (weather.weatherNumber >= 8)
-                    HintText.text = "Нельзя строить во время дождя";
-                else if (!weather.timeCount.isDay)
-                    HintText.text = "Нельзя строить ночью";
-                else HintText.text = "Не хватает древесины";
+                HintText.text = GetCantBuildHint();
                 timerWood -= Time.deltaTime;
             }
             else
             {
-                if (needWood > 0)
-                    HintText.text = BuildText + ", " + needWood + " древесины";
-                else
-                    HintText.text = BuildText;
+                HintText.text = GetBuildHint(BuildText, BuildTextCode, needWood);
             }
 
             HintText.color = new Color(1, 1, 1, 1);
@@ -167,19 +190,12 @@ public class Building : MonoBehaviour
         {
             if (timerWood > 0)
             {
-                if (weather.weatherNumber >= 8)
-                    HintText.text = "Нельзя строить во время дождя";
-                else if (!weather.timeCount.isDay)
-                    HintText.text = "Нельзя строить ночью";
-                else HintText.text = "Не хватает древесины";
+                HintText.text = GetCantBuildHint();
                 timerWood -= Time.deltaTime;
             }
             else
             {
-                if (needWoodUpdateTwo > 0)
-                    HintText.text = UpdateTwoText + ", " + needWoodUpdateTwo + " древесины";
-                else
-                    HintText.text = UpdateTwoText;
+                HintText.text = GetBuildHint(UpdateTwoText, UpdateTwoTextCode, needWoodUpdateTwo);
             }
 
             HintText.color = new Color(1, 1, 1, 1);
@@ -216,18 +232,13 @@ public class Building : MonoBehaviour
         {
             if (timerWood > 0)
             {
-                if (weather.weatherNumber >= 8)
-                    HintText.text = "Нельзя строить во время дождя";
-                else if (!weather.timeCount.isDay)
-                    HintText.text = "Нельзя строить ночью";
-                else HintText.text = "Не хватает древесины";
+                HintText.text = GetCantBuildHint();
                 timerWood -= Time.deltaTime;
             }
             else
-                if (needWoodUpdateThree > 0)
-                HintText.text = UpdateThreeText + ", " + needWoodUpdateThree + " древесины";
-            else
-                HintText.text = UpdateThreeText;
+            {
+                HintText.text = GetBuildHint(UpdateThreeText, UpdateThreeTextCode, needWoodUpdateThree);
+            }
 
             HintText.color = new Color(1, 1, 1, 1);
             onetimeHint = true;

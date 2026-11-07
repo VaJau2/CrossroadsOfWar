@@ -18,5 +18,8 @@ public class TranslationDropdown : MonoBehaviour
 		{
 			dropdown.options[i].text = Lang.GetInstance().GetText(optionCodes[i]);
 		}
+
+		// Подпись выбранного пункта сама не обновляется
+		dropdown.RefreshShownValue();
 	}
 }

@@ -56,7 +56,7 @@ public class TreeBuild : Building
         Vector2.Distance(transform.position, Player.transform.position) < 1.8f && !cutDown && Mathf.Abs(controller.speedX) < 8 &&
         controller.health > 0)
         {
-            HintText.text = BuildText;
+            HintText.text = Lang.GetInstance().GetTextOr(BuildTextCode, BuildText);
             HintText.color = new Color(1, 1, 1, 1);
             onetime = true;
             if (Input.GetKeyDown(KeyCode.E))

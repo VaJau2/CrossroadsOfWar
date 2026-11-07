@@ -42,11 +42,11 @@ public class WallBuild : Building
         {
             if (timerWood > 0)
             {
-                HintText.text = "Не хватает древесины";
+                HintText.text = Lang.GetInstance().GetText("not_enough_wood");
                 timerWood -= Time.deltaTime;
             }
             else
-                HintText.text = "Е - отремонтировать стену";
+                HintText.text = Lang.GetInstance().GetText("repair_wall");
 
             HintText.color = new Color(1, 1, 1, 1);
             onetimeHint = true;

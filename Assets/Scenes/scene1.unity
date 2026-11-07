@@ -153,6 +153,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -1259,6 +1262,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0441\u0442\u0435\u043D\u0443"
   UpdateTwoText: "\u0431\u0430\u0433\u0438, \u0431\u0430\u0433\u0438, \u0431\u0430\u0433\u0438"
   UpdateThreeText: "\u0431\u0430\u0433\u0438, \u0431\u0430\u0433\u0438, \u0431\u0430\u0433\u0438"
+  BuildTextCode: build_wall
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: -1
   startBuilding: 0
@@ -1509,6 +1515,9 @@ MonoBehaviour:
   UpdateTwoText: "\u0415 - \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C
     \u0440\u0430\u0442\u0443\u0448\u0443"
   UpdateThreeText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0440\u0430\u0442\u0443\u0448\u0443"
+  BuildTextCode: light_fire
+  UpdateTwoTextCode: build_town_hall
+  UpdateThreeTextCode: upgrade_town_hall
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -2067,6 +2076,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0431\u0430\u0448\u043D\u044E"
   UpdateTwoText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0431\u0430\u0448\u043D\u044E"
   UpdateThreeText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0431\u0430\u0448\u043D\u044E"
+  BuildTextCode: build_tower
+  UpdateTwoTextCode: upgrade_tower
+  UpdateThreeTextCode: upgrade_tower
   HintText: {fileID: 213119988}
   buildingLevel: -1
   startBuilding: 0
@@ -2537,6 +2549,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -2810,6 +2825,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -3728,6 +3746,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -3959,6 +3980,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -7928,6 +7952,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -8644,6 +8671,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -14157,6 +14187,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -15252,6 +15285,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -17557,6 +17593,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u043E\u0440\u0443\u0436\u0435\u0439\u043D\u0443\u044E"
   UpdateTwoText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u043E\u0440\u0443\u0436\u0435\u0439\u043D\u0443\u044E"
   UpdateThreeText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u043E\u0440\u0443\u0436\u0435\u0439\u043D\u0443\u044E"
+  BuildTextCode: build_armory
+  UpdateTwoTextCode: upgrade_armory
+  UpdateThreeTextCode: upgrade_armory
   HintText: {fileID: 213119988}
   buildingLevel: -1
   startBuilding: 0
@@ -17728,6 +17767,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -18554,6 +18596,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -20616,6 +20661,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0444\u0435\u0440\u043C\u0443"
   UpdateTwoText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0444\u0435\u0440\u043C\u0443"
   UpdateThreeText: "E - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0444\u0435\u0440\u043C\u0443"
+  BuildTextCode: build_farm
+  UpdateTwoTextCode: upgrade_farm
+  UpdateThreeTextCode: upgrade_farm
   HintText: {fileID: 213119988}
   buildingLevel: -1
   startBuilding: 0
@@ -21941,6 +21989,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -22294,6 +22345,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -22902,6 +22956,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0441\u0442\u0435\u043D\u0443"
   UpdateTwoText: "\u0431\u0430\u0433\u0438, \u0431\u0430\u0433\u0438, \u0431\u0430\u0433\u0438"
   UpdateThreeText: "\u0431\u0430\u0433\u0438, \u0431\u0430\u0433\u0438, \u0431\u0430\u0433\u0438"
+  BuildTextCode: build_wall
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: -1
   startBuilding: 0
@@ -24308,6 +24365,70 @@ MonoBehaviour:
     code: blue
   - field: {fileID: 973524653}
     code: play
+  - field: {fileID: 6059353}
+    code: res_wood
+  - field: {fileID: 994211346}
+    code: res_food
+  - field: {fileID: 62140036}
+    code: res_units
+  - field: {fileID: 1990680535}
+    code: game_saved
+  - field: {fileID: 330787940}
+    code: ask_quit
+  - field: {fileID: 1385411516}
+    code: yes
+  - field: {fileID: 1343473227}
+    code: no
+  - field: {fileID: 1408553895}
+    code: back
+  - field: {fileID: 1605153659}
+    code: help_about
+  - field: {fileID: 606518387}
+    code: help_controls
+  - field: {fileID: 374972450}
+    code: help_town_hall
+  - field: {fileID: 2139260716}
+    code: help_farm
+  - field: {fileID: 872908102}
+    code: help_armory
+  - field: {fileID: 1627026012}
+    code: help_warehouse
+  - field: {fileID: 1728986345}
+    code: help_houses
+  - field: {fileID: 245080714}
+    code: help_towers_walls
+  - field: {fileID: 962067772}
+    code: help_building
+  - field: {fileID: 2086941138}
+    code: back
+  - field: {fileID: 1268139458}
+    code: stat_title
+  - field: {fileID: 183433651}
+    code: stat_days_survived
+  - field: {fileID: 1423358585}
+    code: stat_game_time
+  - field: {fileID: 1950406482}
+    code: stat_deaths
+  - field: {fileID: 678116631}
+    code: stat_kills
+  - field: {fileID: 1619512369}
+    code: stat_timberwolf_kills
+  - field: {fileID: 2073081883}
+    code: stat_unicorn_kills
+  - field: {fileID: 1420892370}
+    code: stat_pegasus_kills
+  - field: {fileID: 380359141}
+    code: stat_wood_got
+  - field: {fileID: 284258229}
+    code: stat_wood_spent
+  - field: {fileID: 1156410477}
+    code: stat_food_got
+  - field: {fileID: 1594076007}
+    code: stat_heals
+  - field: {fileID: 1851592752}
+    code: stat_ponies_got
+  - field: {fileID: 2010407832}
+    code: stat_dead_units
   loadLanguageOnAwake: 1
   LanguageSettingButton: {fileID: 0}
 --- !u!1 &903137333
@@ -29892,6 +30013,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -31175,6 +31299,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -31721,6 +31848,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -31996,6 +32126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1046725341}
   - component: {fileID: 1046725342}
+  - component: {fileID: 1046725343}
   m_Layer: 0
   m_Name: sign-text
   m_TagString: Untagged
@@ -32062,6 +32193,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1046725343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046725340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a590dfba09a9ea40ac78a4d9c50de67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 1046725342}
+  enSprie: {fileID: 21300000, guid: 6181d2d7fff55f04984ca683e684d04e, type: 3}
 --- !u!1 &1048732922
 GameObject:
   m_ObjectHideFlags: 0
@@ -32581,6 +32725,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -37460,6 +37607,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -37902,6 +38052,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0441\u043A\u043B\u0430\u0434"
   UpdateTwoText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0441\u043A\u043B\u0430\u0434"
   UpdateThreeText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0441\u043A\u043B\u0430\u0434"
+  BuildTextCode: build_warehouse
+  UpdateTwoTextCode: upgrade_warehouse
+  UpdateThreeTextCode: upgrade_warehouse
   HintText: {fileID: 213119988}
   buildingLevel: -1
   startBuilding: 0
@@ -40125,6 +40278,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -40859,6 +41015,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -41189,6 +41348,9 @@ MonoBehaviour:
     \u043D\u0435 \u043E\u0431\u0440\u0430\u0449\u0430\u0439\u0442\u0435 \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u044F]"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: 
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 0}
   buildingLevel: 0
   startBuilding: 0
@@ -41671,6 +41833,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -42760,6 +42925,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -43499,6 +43667,17 @@ MonoBehaviour:
     \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435\u0441\u044C \u0438
     \u043D\u0430\u0436\u043C\u0438\u0442\u0435 \u043A\u043B\u0430\u0432\u0438\u0448\u0443
     \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F."
+  helpTextCodes:
+  - help_text_0
+  - help_text_1
+  - help_text_2
+  - help_text_3
+  - help_text_4
+  - help_text_5
+  - help_text_6
+  - help_text_7
+  - help_text_8
+  - help_text_9
   tempTextNumber: 0
   helpLabel: {fileID: 57546834}
   MusicSource: {fileID: 631977052}
@@ -43658,6 +43837,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -46178,6 +46360,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -46711,6 +46896,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -47394,6 +47582,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -48272,6 +48463,34 @@ MonoBehaviour:
     \u0441\u043C\u0435\u0440\u0442\u043D\u044B. \u0414\u0430\u0436\u0435 \u043F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C
     \u043E\u0441\u043E\u0431\u043E \u043D\u0435 \u0441 \u043A\u0435\u043C."
   - "\u042D\u0445... \u041B\u0430\u0434\u043D\u043E, \u043C\u043D\u0435 \u043F\u043E\u0440\u0430."
+  AskTextCodes:
+  - twilight_ask_0
+  - twilight_ask_1
+  - twilight_ask_2
+  - twilight_ask_3
+  - twilight_ask_4
+  - twilight_ask_5
+  - twilight_ask_6
+  - twilight_ask_7
+  - twilight_ask_8
+  - twilight_ask_9
+  - twilight_ask_10
+  - twilight_ask_11
+  - twilight_ask_12
+  AnswerTextCodes:
+  - twilight_answer_0
+  - twilight_answer_1
+  - twilight_answer_2
+  - twilight_answer_3
+  - twilight_answer_4
+  - twilight_answer_5
+  - twilight_answer_6
+  - twilight_answer_7
+  - twilight_answer_8
+  - twilight_answer_9
+  - twilight_answer_10
+  - twilight_answer_11
+  - twilight_answer_12
   HintText: {fileID: 213119988}
   Answer: {fileID: 1721038518}
   anim: {fileID: 1452843513}
@@ -51711,6 +51930,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -53172,6 +53394,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -53533,6 +53758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1705824694}
   - component: {fileID: 1705824695}
+  - component: {fileID: 1705824696}
   m_Layer: 5
   m_Name: weaponHouseHint
   m_TagString: Untagged
@@ -53599,6 +53825,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1705824696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1705824693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a590dfba09a9ea40ac78a4d9c50de67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 1705824695}
+  enSprie: {fileID: 21300000, guid: 7a4ad2ec135870c40bf435eca5282442, type: 3}
 --- !u!1 &1709256071
 GameObject:
   m_ObjectHideFlags: 0
@@ -53700,6 +53939,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -53864,6 +54106,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -54623,6 +54868,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -56797,6 +57045,9 @@ MonoBehaviour:
     \u0441\u043B\u043E\u043C\u0430\u043B\u043E\u0441\u044C]"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: 
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -58050,6 +58301,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -58578,6 +58832,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -59437,6 +59694,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -59798,6 +60058,9 @@ MonoBehaviour:
   UpdateTwoText: "\u0415 - \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C
     \u0434\u043E\u043C\u0430"
   UpdateThreeText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0434\u043E\u043C\u0430"
+  BuildTextCode: build_tents
+  UpdateTwoTextCode: build_houses
+  UpdateThreeTextCode: upgrade_houses
   HintText: {fileID: 213119988}
   buildingLevel: -1
   startBuilding: 0
@@ -63546,6 +63809,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -64388,6 +64654,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u0441\u0440\u0443\u0431\u0438\u0442\u044C \u0434\u0435\u0440\u0435\u0432\u043E"
   UpdateTwoText: 
   UpdateThreeText: 
+  BuildTextCode: cut_tree
+  UpdateTwoTextCode: 
+  UpdateThreeTextCode: 
   HintText: {fileID: 213119988}
   buildingLevel: 0
   startBuilding: 0
@@ -65244,6 +65513,9 @@ MonoBehaviour:
   BuildText: "\u0415 - \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0431\u0430\u0448\u043D\u044E"
   UpdateTwoText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0431\u0430\u0448\u043D\u044E"
   UpdateThreeText: "\u0415 - \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0431\u0430\u0448\u043D\u044E"
+  BuildTextCode: build_tower
+  UpdateTwoTextCode: upgrade_tower
+  UpdateThreeTextCode: upgrade_tower
   HintText: {fileID: 213119988}
   buildingLevel: -1
   startBuilding: 0

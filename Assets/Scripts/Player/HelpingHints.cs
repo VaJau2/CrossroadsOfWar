@@ -78,7 +78,7 @@ public class HelpingHints : MonoBehaviour {
                     }
                     else //подсказка плавно появляется
                     {
-                        HelpText.text = "A и D - передвижение";
+                        HelpText.text = Lang.GetInstance().GetText("hint_moving");
                         if (HelpText.color.a < 1)
                         {
                             HelpText.color = new Color(1, 1, 1, HelpText.color.a + Time.deltaTime);
@@ -94,7 +94,7 @@ public class HelpingHints : MonoBehaviour {
         else //все остальные подсказки должны появляться после этой
         {
             if (ShowPlaceHint(Fire.transform, FireDistance, "FireHint", fireHintTimer,
-                "Чтобы начать строительство лагеря, подойдите к костру и зажгите его"))
+                Lang.GetInstance().GetText("hint_fire")))
             {
                 fireHintTimer -= Time.deltaTime;
                 return;
@@ -103,19 +103,19 @@ public class HelpingHints : MonoBehaviour {
             if (Fire.buildingLevel == 1)
             {
                 if (ShowPlaceHint(CampOne, CampDistance, "CampHint", campHintTimer,
-                    "Попробуйте позвать кого-нибудь из них к себе в лагерь, чтобы у вас были юниты"))
+                    Lang.GetInstance().GetText("hint_camp")))
                 {
                     campHintTimer -= Time.deltaTime;
                     return;
                 }
                 if (ShowPlaceHint(CampTwo, CampDistance, "CampHint", campHintTimer,
-                    "Попробуйте позвать кого-нибудь из них к себе в лагерь, чтобы у вас были юниты"))
+                    Lang.GetInstance().GetText("hint_camp")))
                 {
                     campHintTimer -= Time.deltaTime;
                     return;
                 }
                 if (ShowPlaceHint(Forest, ForestDistance, "ForestHint", forestHintTimer,
-                    "Для строительства зданий, вам нужна древесина. Пометьте одно из деревьев, и если у вас в лагере есть юнит, он срубит его"))
+                    Lang.GetInstance().GetText("hint_forest")))
                 {
                     forestHintTimer -= Time.deltaTime;
                     return;
@@ -130,7 +130,7 @@ public class HelpingHints : MonoBehaviour {
                     {
                         foodHintTimer -= Time.deltaTime;
 
-                        HelpText.text = "Вам и вашим юнитам нужна еда. Без еды вы начнете голодать. Постройте ферму.";
+                        HelpText.text = Lang.GetInstance().GetText("hint_food");
 
                         if (HelpText.color.a < 1)
                         {
@@ -147,9 +147,9 @@ public class HelpingHints : MonoBehaviour {
             if (timeCount.days == 8)
             {
                 if (System.Environment.UserName.Length > 0)
-                    HelpText.text = "Спасибо за игру! " + System.Environment.UserName + ", ты крут с:";
+                    HelpText.text = string.Format(Lang.GetInstance().GetText("thanks_for_playing_name"), System.Environment.UserName);
                 else
-                    HelpText.text = "Спасибо за игру!";
+                    HelpText.text = Lang.GetInstance().GetText("thanks_for_playing");
 
                 if (HelpText.color.a < 1)
                 {

@@ -528,7 +528,7 @@ public class Earthpony : Animal
         Mathf.Abs(hireUnit.Player.speedX) < 8 &&
         hireUnit.Player.health > 0)
                 {
-                    hireUnit.HintText.text = "S - убрать из отряда";
+                    hireUnit.HintText.text = Lang.GetInstance().GetText("squad_dismiss");
                     hireUnit.HintText.color = new Color(1, 1, 1, 1);
                     hireUnit.onetimeHint = true;
                     if (Input.GetKeyDown(KeyCode.S))
@@ -557,7 +557,7 @@ public class Earthpony : Animal
            Mathf.Abs(hireUnit.Player.speedX) < 8 &&
            hireUnit.Player.health > 0 && hireUnit.mainCamp.fireBuild.huntersFollow < hireUnit.mainCamp.fireBuild.buildingLevel)
                     {
-                        hireUnit.HintText.text = "W - собрать отряд";
+                        hireUnit.HintText.text = Lang.GetInstance().GetText("squad_gather");
                         hireUnit.HintText.color = new Color(1, 1, 1, 1);
                         hireUnit.onetimeHint = true;
                         if (Input.GetKeyDown(KeyCode.W))

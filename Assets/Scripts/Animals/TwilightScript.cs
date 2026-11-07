@@ -14,6 +14,9 @@ public class TwilightScript : MonoBehaviour
     public MovingController Player;
     public string[] AskText;
     public string[] AnswerText;
+    // Коды перевода AskText и AnswerText (по тем же индексам)
+    public string[] AskTextCodes;
+    public string[] AnswerTextCodes;
     bool dissapear;
     int textI;
 
@@ -113,7 +116,7 @@ public class TwilightScript : MonoBehaviour
             if (answerTimer > 0)
             {
                 Answer.gameObject.SetActive(true);
-                Answer.text = AnswerText[textI];
+                Answer.text = Lang.GetInstance().GetTextOr(AnswerTextCodes, textI, AnswerText[textI]);
                 answerTimer -= Time.deltaTime;
             }
             else
@@ -149,7 +152,7 @@ public class TwilightScript : MonoBehaviour
        Mathf.Abs(Player.speedX) < 8 &&
        Player.health > 0)
             {
-                HintText.text = AskText[textI];
+                HintText.text = Lang.GetInstance().GetTextOr(AskTextCodes, textI, AskText[textI]);
                 HintText.color = new Color(1, 1, 1, 1);
                 onetimeHint = true;
                 if (Input.GetKeyDown(KeyCode.F))

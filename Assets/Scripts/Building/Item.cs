@@ -50,7 +50,7 @@ public class Item : MonoBehaviour
                 }
                 else
                 {
-                    res.weapon.HintText.text = "Нет места на складе";
+                    res.weapon.HintText.text = Lang.GetInstance().GetText("warehouse_full");
                     res.weapon.HintText.color = new Color(1, 1, 1, 1);
                     onetimeHint = true;             
                 }

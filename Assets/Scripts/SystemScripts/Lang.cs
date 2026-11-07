@@ -47,6 +47,14 @@ public class Lang
         return string.IsNullOrEmpty(key) ? fallback : GetText(key, category);
     }
 
+    // То же для массива кодов, парного массиву текстов: если кода с таким индексом нет - исходный текст
+    public string GetTextOr(string[] codes, int index, string fallback, string category = DefaultCategory)
+    {
+        return codes != null && index >= 0 && index < codes.Length
+            ? GetTextOr(codes[index], fallback, category)
+            : fallback;
+    }
+
     public void LoadLocalization()
     {
         localizedText.Clear();

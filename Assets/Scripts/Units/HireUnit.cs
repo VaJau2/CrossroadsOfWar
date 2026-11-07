@@ -124,7 +124,7 @@ public class HireUnit : MonoBehaviour
             {
                 fire.workManager.cooldown = 0.5f;
                 fire.workManager.tempUnitID = earthpony.myHome.Ponies.IndexOf(earthpony);
-                HintText.text = "Е - присоединить к лагерю";
+                HintText.text = Lang.GetInstance().GetText("hire_unit");
                 HintText.color = new Color(1, 1, 1, 1);
                 onetimeHint = true;
             }
