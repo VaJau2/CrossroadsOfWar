@@ -321,7 +321,7 @@ public class GameManager : MonoBehaviour
             {
                 if (dealthText.color.a < 1)
                 {
-                    dealthText.text = "F, чтобы почтить память этого пони";
+                    dealthText.text = Lang.GetInstance().GetText("f_to_pay_respect");
                     dealthText.color = new Color(1, 1, 1, dealthText.color.a + Time.deltaTime);
                 }
                 else

@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 225245173}
   - component: {fileID: 225245172}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ResetText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -634,6 +634,7 @@ GameObject:
   - component: {fileID: 357761944}
   - component: {fileID: 357761943}
   - component: {fileID: 357761942}
+  - component: {fileID: 357761945}
   m_Layer: 5
   m_Name: Language
   m_TagString: Untagged
@@ -657,7 +658,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 301.6, y: -187.2}
+  m_AnchoredPosition: {x: 305.1, y: -222.17}
   m_SizeDelta: {x: 168.75, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &357761942
@@ -698,7 +699,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 357761943}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 357761945}
+        m_MethodName: OnLanguageChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &357761943
@@ -735,6 +747,42 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 357761940}
   m_CullTransparentMesh: 0
+--- !u!114 &357761945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 357761940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512de0f75f57c324d9e4f5ce5d7001f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  languageLabels:
+  - {fileID: 2013435394}
+  - {fileID: 1833560129}
+  - {fileID: 716998834}
+  - {fileID: 569467238}
+  - {fileID: 1731895113}
+  - {fileID: 1478105480}
+  - {fileID: 934781149}
+  - {fileID: 872667646}
+  - {fileID: 225245172}
+  languageCodes:
+  - language
+  - continue
+  - start
+  - settings
+  - exit
+  - sound
+  - music
+  - back
+  - reset
+  onLanguageChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &371150055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1296,7 @@ GameObject:
   - component: {fileID: 569467239}
   - component: {fileID: 569467238}
   m_Layer: 5
-  m_Name: Text
+  m_Name: SettingsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1900,7 +1948,7 @@ GameObject:
   - component: {fileID: 716998835}
   - component: {fileID: 716998834}
   m_Layer: 5
-  m_Name: Text
+  m_Name: StartText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2164,7 +2212,7 @@ GameObject:
   - component: {fileID: 872667647}
   - component: {fileID: 872667646}
   m_Layer: 5
-  m_Name: Text
+  m_Name: BackText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2484,7 +2532,7 @@ GameObject:
   - component: {fileID: 934781150}
   - component: {fileID: 934781149}
   m_Layer: 5
-  m_Name: Label (1)
+  m_Name: MusicLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2505,8 +2553,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -68.90001, y: -1.6999998}
-  m_SizeDelta: {x: -15.029999, y: -3}
+  m_AnchoredPosition: {x: -133.13, y: -1.6999998}
+  m_SizeDelta: {x: -63.55, y: -3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &934781149
 MonoBehaviour:
@@ -2534,7 +2582,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3156,6 +3204,81 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1201232873}
+  m_CullTransparentMesh: 0
+--- !u!1 &1268600489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1268600490}
+  - component: {fileID: 1268600492}
+  - component: {fileID: 1268600491}
+  m_Layer: 5
+  m_Name: VersionText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1268600490
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268600489}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.000312, y: 1.000312, z: 1.000312}
+  m_Children: []
+  m_Father: {fileID: 1685845332}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -1.8999939, y: 1.6036072}
+  m_SizeDelta: {x: 43.46997, y: 30.350006}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &1268600491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268600489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 20
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: v 1.1
+--- !u!222 &1268600492
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268600489}
   m_CullTransparentMesh: 0
 --- !u!1 &1273087900
 GameObject:
@@ -3799,7 +3922,7 @@ GameObject:
   - component: {fileID: 1478105481}
   - component: {fileID: 1478105480}
   m_Layer: 5
-  m_Name: Label
+  m_Name: SoundLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3820,8 +3943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -53.9, y: -1.6999998}
-  m_SizeDelta: {x: -15.029999, y: -3}
+  m_AnchoredPosition: {x: -132.48, y: -1.6999998}
+  m_SizeDelta: {x: -65.63, y: -3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478105480
 MonoBehaviour:
@@ -3849,7 +3972,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -4423,6 +4546,7 @@ GameObject:
   - component: {fileID: 1685845331}
   - component: {fileID: 1685845330}
   - component: {fileID: 1685845329}
+  - component: {fileID: 1685845333}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4501,6 +4625,7 @@ RectTransform:
   - {fileID: 866329444}
   - {fileID: 1535705819}
   - {fileID: 357761941}
+  - {fileID: 1268600490}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4509,6 +4634,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1685845333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1685845328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e016cfeb6e112d447bd64ace8b59b5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translations: []
+  loadLanguageOnAwake: 1
+  LanguageSettingButton: {fileID: 357761945}
 --- !u!1 &1731895111
 GameObject:
   m_ObjectHideFlags: 0
@@ -4520,7 +4659,7 @@ GameObject:
   - component: {fileID: 1731895114}
   - component: {fileID: 1731895113}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ExitText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4595,7 +4734,7 @@ GameObject:
   - component: {fileID: 1833560130}
   - component: {fileID: 1833560129}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ContinueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4981,7 +5120,7 @@ GameObject:
   - component: {fileID: 2013435395}
   - component: {fileID: 2013435394}
   m_Layer: 5
-  m_Name: Text
+  m_Name: LanguageText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

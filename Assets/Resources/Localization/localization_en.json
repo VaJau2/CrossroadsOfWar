@@ -1,0 +1,39 @@
+﻿{
+  "language": "Language: English",
+
+  "continue": "Continue",
+  "start": "New Game",
+  "settings": "Settings",
+  "exit": "Exit",
+  "help": "Help",
+  "statistic": "Statistic",
+  "exit_to_menu": "Exit to menu",
+
+  "sound": "Sound:",
+  "music": "Music:",
+  "back": "Back",
+  "reset": "Reset all data",
+  
+  "loading": "Loading...",
+  "loading_complete": "Loading complete. Press Space to continue.",
+
+  "choose_pony_title": "Choose your character appearance:",
+  "gender": "Gender:",
+  "gender_mare": "Mare",
+  "gender_colt": "Colt",
+  "have_beard": "Having a beard",
+  "mane_slider": "Mane shape",
+
+  "hair_color": "Mane color",
+  "coat_color": "Coat color",
+  "eye_color": "Eye color",
+  "flag_color": "Flag color",
+
+  "red": "Red:",
+  "green": "Green:",
+  "blue": "Blue:",
+  
+  "play": "Play",
+
+  "f_to_pay_respect": "Press F to pay respect at this pony"
+}

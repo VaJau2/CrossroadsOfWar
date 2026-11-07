@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -35,7 +33,7 @@ public class loading : MonoBehaviour {
 
         if (loadingProgress > 89)
         {
-            myText.text = "Загрузка завершена. Нажмите пробел для продолжения.";
+            myText.text = Lang.GetInstance().GetText("loading_complete");
 
             if (Input.GetKeyDown(KeyCode.Space))
             {

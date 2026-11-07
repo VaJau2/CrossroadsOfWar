@@ -142,6 +142,7 @@
      <Compile Include="Assets\Scripts\Building\WeaponBuilding.cs" />
      <Compile Include="Assets\Scripts\Building\WorkingManager.cs" />
      <Compile Include="Assets\Scripts\Interface\LanguageSettingButton.cs" />
+     <Compile Include="Assets\Scripts\Interface\TranslationDropdown.cs" />
      <Compile Include="Assets\Scripts\Interface\TranslationText.cs" />
      <Compile Include="Assets\Scripts\Player\ArrowTest.cs" />
      <Compile Include="Assets\Scripts\Player\CameraFollow.cs" />

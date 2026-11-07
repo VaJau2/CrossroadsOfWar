@@ -48,8 +48,7 @@ public class ChoosePonyMenu : MonoBehaviour {
    public void ChangeGender()
     {
         playerMare = !playerMare;
-        if (playerMare) genderText.text = "Женский";
-        else genderText.text = "Мужской";
+        genderText.text = Lang.GetInstance().GetText(playerMare ? "gender_mare" : "gender_colt");
         ExamplePony.playerMare = playerMare;
         ExamplePony.SetNewValues();
     }
@@ -63,8 +62,7 @@ public class ChoosePonyMenu : MonoBehaviour {
     void StartCheck()
     {
         playerMare = ExamplePony.playerMare;
-        if (playerMare) genderText.text = "Женский";
-        else genderText.text = "Мужской";
+        genderText.text = Lang.GetInstance().GetText(playerMare ? "gender_mare" : "gender_colt");
 
         if (playerMare)
         {
