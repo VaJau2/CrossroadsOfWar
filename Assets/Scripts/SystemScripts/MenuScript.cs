@@ -31,6 +31,9 @@ public class MenuScript : MonoBehaviour {
     private void Start()
     {
         _audi = GetComponent<AudioSource>();
+        
+        LoadVolume();
+        
         if(Ini.FileExists("Save.sv"))
         {
             Ini.LoadFile("Save.sv");
@@ -53,7 +56,7 @@ public class MenuScript : MonoBehaviour {
             ExamplePony.HairAnim.SetBool("sit", true);
 
             if(ExamplePony.Beard.activeSelf)
-            ExamplePony.Beard.GetComponent<Animator>().SetBool("sit", true);
+                ExamplePony.Beard.GetComponent<Animator>().SetBool("sit", true);
 
             
             LoadGameButton.interactable = true;
@@ -88,6 +91,11 @@ public class MenuScript : MonoBehaviour {
         FirstMenu.SetActive(false);
         SecondMenu.SetActive(true);
 
+        LoadVolume();
+    }
+
+    private void LoadVolume()
+    {
         if(PlayerPrefs.HasKey("MusicVolume"))
         {
             MusicVolume.value = PlayerPrefs.GetFloat("MusicVolume");
@@ -107,9 +115,14 @@ public class MenuScript : MonoBehaviour {
         }
     }
 
-    public void ClickBackToMenu()
+    public void PlayClickSound()
     {
         _audi.PlayOneShot(ButtonClick);
+    }
+
+    public void ClickBackToMenu()
+    {
+        PlayClickSound();
         FirstMenu.SetActive(true);
         SecondMenu.SetActive(false);
 
@@ -125,20 +138,20 @@ public class MenuScript : MonoBehaviour {
 
     public void Exit()
     {
-        _audi.PlayOneShot(ButtonClick);
+        PlayClickSound();
         exit = true;
     }
 
     public void ContinueGame()
     {
-        _audi.PlayOneShot(ButtonClick);
+        PlayClickSound();
         PlayerPrefs.SetInt("Load", 1);
         start = true;
     }
 
     public void StartGame()
     {
-        _audi.PlayOneShot(ButtonClick);
+        PlayClickSound();
         PlayerPrefs.SetInt("Load", 0);
         start = true;
     }
